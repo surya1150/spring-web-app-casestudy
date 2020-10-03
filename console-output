@@ -1,0 +1,528 @@
+
+  
+  <!DOCTYPE html><html class=""><head resURL="/static/aca1ebcf" data-rooturl="" data-resurl="/static/aca1ebcf" data-extensions-available="true" data-unit-test="false" data-imagesurl="/static/aca1ebcf/images" data-crumb-header="Jenkins-Crumb" data-crumb-value="20d640a3ebe32d4b7587a4ad9314a86982a3d5e195d64095345d36a6d8fb86a2">
+    
+    
+
+    <title>spring-web-app-casestudy #13 Console [Jenkins]</title><link rel="stylesheet" href="/static/aca1ebcf/jsbundles/base-styles-v2.css" type="text/css"><link rel="stylesheet" href="/static/aca1ebcf/css/color.css" type="text/css"><link rel="stylesheet" href="/static/aca1ebcf/css/responsive-grid.css" type="text/css"><link rel="shortcut icon" href="/static/aca1ebcf/favicon.ico" type="image/vnd.microsoft.icon"><link color="black" rel="mask-icon" href="/images/mask-icon.svg"><script src="/static/aca1ebcf/scripts/prototype.js" type="text/javascript"></script><script src="/static/aca1ebcf/scripts/behavior.js" type="text/javascript"></script><script src='/adjuncts/aca1ebcf/org/kohsuke/stapler/bind.js' type='text/javascript'></script><script src="/static/aca1ebcf/scripts/yui/yahoo/yahoo-min.js"></script><script src="/static/aca1ebcf/scripts/yui/dom/dom-min.js"></script><script src="/static/aca1ebcf/scripts/yui/event/event-min.js"></script><script src="/static/aca1ebcf/scripts/yui/animation/animation-min.js"></script><script src="/static/aca1ebcf/scripts/yui/dragdrop/dragdrop-min.js"></script><script src="/static/aca1ebcf/scripts/yui/container/container-min.js"></script><script src="/static/aca1ebcf/scripts/yui/connection/connection-min.js"></script><script src="/static/aca1ebcf/scripts/yui/datasource/datasource-min.js"></script><script src="/static/aca1ebcf/scripts/yui/autocomplete/autocomplete-min.js"></script><script src="/static/aca1ebcf/scripts/yui/menu/menu-min.js"></script><script src="/static/aca1ebcf/scripts/yui/element/element-min.js"></script><script src="/static/aca1ebcf/scripts/yui/button/button-min.js"></script><script src="/static/aca1ebcf/scripts/yui/storage/storage-min.js"></script><script src="/static/aca1ebcf/scripts/polyfills.js" type="text/javascript"></script><script src="/static/aca1ebcf/scripts/hudson-behavior.js" type="text/javascript"></script><script src="/static/aca1ebcf/scripts/sortable.js" type="text/javascript"></script><link rel="stylesheet" href="/static/aca1ebcf/scripts/yui/container/assets/container.css" type="text/css"><link rel="stylesheet" href="/static/aca1ebcf/scripts/yui/container/assets/skins/sam/container.css" type="text/css"><link rel="stylesheet" href="/static/aca1ebcf/scripts/yui/menu/assets/skins/sam/menu.css" type="text/css"><link rel="stylesheet" href="/static/aca1ebcf/jsbundles/ui-refresh-overrides.css" type="text/css"><link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Jenkins"><meta name="ROBOTS" content="INDEX,NOFOLLOW"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="/static/aca1ebcf/jsbundles/vendors.js" type="text/javascript"></script><script src="/static/aca1ebcf/jsbundles/page-init.js" type="text/javascript"></script></head><body data-model-type="org.jenkinsci.plugins.workflow.job.WorkflowRun" id="jenkins" class="yui-skin-sam two-column jenkins-2.249.1" data-version="2.249.1"><a href="#skip2content" class="skiplink">Skip to content</a><div id="page-head"><header id="header" class="page-header"><div class="page-header__brand"><div class="logo"><a id="jenkins-home-link" href="/"><img src="/static/aca1ebcf/images/jenkins-header-logo-v2.svg" alt="[Jenkins]" id="jenkins-head-icon"><img src="/static/aca1ebcf/images/title.png" alt="Jenkins" width="139" id="jenkins-name-icon" height="34"></a></div><a href="/" class="page-header__brand-link"><img src="/static/aca1ebcf/images/jenkins-header-logo-v2.svg" alt="[Jenkins]" class="page-header__brand-image"><span class="page-header__brand-name">Jenkins</span></a></div><div class="searchbox hidden-xs"><form role="search" method="get" name="search" action="/job/spring-web-app-casestudy/13/search/" style="position:relative;" class="no-json"><div id="search-box-sizer"></div><div id="searchform"><input role="searchbox" name="q" placeholder="search" id="search-box" class="main-search__input has-default-text"><span class="main-search__icon-leading"><svg viewBox="0 0 24 24" aria-hidden="" tooltip="" focusable="false" class="svg-icon "><use href="/static/aca1ebcf/images/material-icons/svg-sprite-action-symbol.svg#ic_search_24px"></use></svg></span><a href="https://jenkins.io/redirect/search-box" class="main-search__icon-trailing"><svg viewBox="0 0 24 24" aria-hidden="" tooltip="" focusable="false" class="svg-icon "><use href="/static/aca1ebcf/images/material-icons/svg-sprite-action-symbol.svg#ic_help_outline_24px"></use></svg></a><div id="search-box-completion"></div><script>createSearchBox("/job/spring-web-app-casestudy/13/search/");</script></div></form></div><div class="login page-header__hyperlinks"><div id="visible-am-insertion" class="page-header__am-wrapper"></div><a href="/user/admin" class="model-link inside inverse"><svg viewBox="0 0 24 24" aria-hidden="" tooltip="" focusable="false" class="svg-icon am-monitor-icon"><use href="/static/aca1ebcf/images/material-icons/svg-sprite-social-symbol.svg#ic_person_24px"></use></svg><span class="hidden-xs hidden-sm">jenkins</span></a><a href="/logout"><svg viewBox="0 0 24 24" aria-hidden="" tooltip="" focusable="false" class="svg-icon "><use href="/static/aca1ebcf/images/material-icons/svg-sprite-action-symbol.svg#ic_input_24px"></use></svg><span class="hidden-xs hidden-sm">log out</span></a></div></header><div id="breadcrumbBar"><tr id="top-nav"><td id="left-top-nav" colspan="2"><link rel='stylesheet' href='/adjuncts/aca1ebcf/lib/layout/breadcrumbs.css' type='text/css' /><script src='/adjuncts/aca1ebcf/lib/layout/breadcrumbs.js' type='text/javascript'></script><div class="top-sticker noedge"><div class="top-sticker-inner"><div class="breadcrumbs__wrapper"><ul id="breadcrumbs"><li class="item"><a href="/" class="model-link inside">Jenkins</a></li><li href="/" class="children"></li><li class="item"><a href="/job/spring-web-app-casestudy/" class="model-link inside">spring-web-app-casestudy</a></li><li href="/job/spring-web-app-casestudy/" class="children"></li><li class="item"><a href="/job/spring-web-app-casestudy/13/" class="model-link inside">#13</a></li><li class="separator"></li></ul><div id="breadcrumb-menu-target"></div></div></div></div></td></tr></div></div><div id="page-body" class="clear"><div id="side-panel"><div id="tasks"><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/" title="Back to Project" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/up.png" alt="" style="width: 24px; height: 24px; " class="icon-up icon-md"></span><span class="task-link-text">Back to Project</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/" title="Status" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/search.png" alt="" style="width: 24px; height: 24px; " class="icon-workflow-stage icon-md"></span><span class="task-link-text">Status</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/changes" title="Changes" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/notepad.png" alt="" style="width: 24px; height: 24px; " class="icon-notepad icon-md"></span><span class="task-link-text">Changes</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/console" title="Console Output" class="task-link task-link--active"><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/terminal.png" alt="" style="width: 24px; height: 24px; " class="icon-terminal icon-md"></span><span class="task-link-text">Console Output</span></a></span><div class="subtasks"><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/consoleText" title="View as plain text" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/document.png" alt="" style="width: 24px; height: 24px; " class="icon-document icon-md"></span><span class="task-link-text">View as plain text</span></a></span></div></div></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/configure" title="Edit Build Information" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/notepad.png" alt="" style="width: 24px; height: 24px; " class="icon-notepad icon-md"></span><span class="task-link-text">Edit Build Information</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/confirmDelete" title="Delete build ‘#13’" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/edit-delete.png" alt="" style="width: 24px; height: 24px; " class="icon-edit-delete icon-md"></span><span class="task-link-text">Delete build ‘#13’</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/git" title="Git Build Data" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/plugin/git/icons/git-32x32.png" alt="" class=""></span><span class="task-link-text">Git Build Data</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/tagBuild" title="No Tags" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/save.png" alt="" style="width: 24px; height: 24px; " class="icon-save icon-md"></span><span class="task-link-text">No Tags</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/replay" title="Replay" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/redo.png" alt="" style="width: 24px; height: 24px; " class="icon-redo icon-md"></span><span class="task-link-text">Replay</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/flowGraphTable" title="Pipeline Steps" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/gear.png" alt="" style="width: 24px; height: 24px; " class="icon-gear icon-md"></span><span class="task-link-text">Pipeline Steps</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/13/ws" title="Workspaces" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/plugin/cloudbees-folder/images/24x24/folder.png" alt="" style="width: 24px; height: 24px; " class="icon-folder icon-md"></span><span class="task-link-text">Workspaces</span></a></span></div><div class="task "><span class="task-link-wrapper "><a href="/job/spring-web-app-casestudy/12/console" title="Previous Build" class="task-link "><span class="task-icon-link"><img src="/static/aca1ebcf/images/24x24/previous.png" alt="" style="width: 24px; height: 24px; " class="icon-previous icon-md"></span><span class="task-link-text">Previous Build</span></a></span></div></div></div><div id="main-panel"><a name="skip2content"></a><h1 class="build-caption page-headline"><img src="/static/aca1ebcf/images/48x48/blue.png" alt="Success" tooltip="Success" style="width: 48px; height: 48px; " class="icon-blue icon-xlg"><script>
+          (function(){
+            function updateBuildCaptionIcon(){
+              new Ajax.Request("statusIcon",{
+                method: "get",
+                onComplete: function(rsp,_) {
+                  var isBuilding = rsp.getResponseHeader("X-Building");
+                  if (isBuilding == "true") {
+                    setTimeout(updateBuildCaptionIcon, 5000)
+                  } else {
+                    var progressBar = document.querySelector(".build-caption-progress-container");
+                    if (progressBar) {
+                      progressBar.style.display = "none";
+                    }
+                  }
+                  document.querySelector(".build-caption .icon-xlg").outerHTML = rsp.responseText;
+                }
+              });
+            }
+
+            window.addEventListener("load", function(){
+              Event.observe(window, "jenkins:consoleFinished", updateBuildCaptionIcon);
+            });
+
+          })();
+        </script>Console Output</h1><script src='/static/aca1ebcf/extensionList/hudson.console.ConsoleAnnotatorFactory/hudson.plugins.timestamper.annotator.TimestampAnnotatorFactory3/script.js'></script><link rel='stylesheet' type='text/css' href='/static/aca1ebcf/descriptor/hudson.tasks._ant.AntOutcomeNote/style.css' /><script src='/static/aca1ebcf/descriptor/hudson.tasks._ant.AntTargetNote/script.js'></script><script src='/static/aca1ebcf/descriptor/hudson.console.ExpandableDetailsNote/script.js'></script><link rel='stylesheet' type='text/css' href='/static/aca1ebcf/descriptor/hudson.console.ExpandableDetailsNote/style.css' /><link rel='stylesheet' type='text/css' href='/static/aca1ebcf/descriptor/hudson.plugins.gradle.GradleOutcomeNote/style.css' /><script src='/static/aca1ebcf/descriptor/hudson.plugins.gradle.GradleTaskNote/script.js'></script><link rel='stylesheet' type='text/css' href='/static/aca1ebcf/descriptor/hudson.plugins.gradle.GradleTaskNote/style.css' /><script src='/static/aca1ebcf/descriptor/org.jenkinsci.plugins.workflow.job.console.NewNodeConsoleNote/script.js'></script><link rel='stylesheet' type='text/css' href='/static/aca1ebcf/descriptor/org.jenkinsci.plugins.workflow.job.console.NewNodeConsoleNote/style.css' /><pre class="console-output">Started by user <a href='/user/surya-1297306' class='model-link'>kotha surya chandra kumar</a>
+Running in Durability level: MAX_SURVIVABILITY
+<span class="pipeline-new-node" nodeId="2" startId="2">[Pipeline] Start of Pipeline
+</span><span class="pipeline-new-node" nodeId="3" startId="3" enclosingId="2">[Pipeline] node
+</span><span class="pipeline-node-3">Running on <a href='/computer/(master)/' class='model-link'>Jenkins</a> in /var/lib/jenkins/workspace/spring-web-app-casestudy
+</span><span class="pipeline-new-node" nodeId="4" startId="4" enclosingId="3">[Pipeline] {
+</span><span class="pipeline-new-node" nodeId="5" startId="5" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="6" startId="6" enclosingId="5" label="clean workspace">[Pipeline] { (clean workspace)
+</span><span class="pipeline-new-node" nodeId="7" enclosingId="6">[Pipeline] cleanWs
+</span><span class="pipeline-node-7">[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+</span><span class="pipeline-new-node" nodeId="8" startId="6">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="9" startId="5">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="10" startId="10" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="11" startId="11" enclosingId="10" label="SCM Checkout">[Pipeline] { (SCM Checkout)
+</span><span class="pipeline-new-node" nodeId="12" enclosingId="11">[Pipeline] git
+</span><span class="pipeline-node-12">The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository <a href='https://github.com/surya1150/spring-web-app-casestudy.git'>https://github.com/surya1150/spring-web-app-casestudy.git</a>
+ &gt; /usr/bin/git init /var/lib/jenkins/workspace/spring-web-app-casestudy # timeout=10
+Fetching upstream changes from <a href='https://github.com/surya1150/spring-web-app-casestudy.git'>https://github.com/surya1150/spring-web-app-casestudy.git</a>
+ &gt; /usr/bin/git --version # timeout=10
+ &gt; git --version # 'git version 2.7.4'
+ &gt; /usr/bin/git fetch --tags --progress <a href='https://github.com/surya1150/spring-web-app-casestudy.git'>https://github.com/surya1150/spring-web-app-casestudy.git</a> +refs/heads/*:refs/remotes/origin/* # timeout=10
+ &gt; /usr/bin/git config remote.origin.url <a href='https://github.com/surya1150/spring-web-app-casestudy.git'>https://github.com/surya1150/spring-web-app-casestudy.git</a> # timeout=10
+ &gt; /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ &gt; /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 45c3cb9bd43f7a6710918d9615e36c4d13283617 (refs/remotes/origin/master)
+ &gt; /usr/bin/git config core.sparsecheckout # timeout=10
+ &gt; /usr/bin/git checkout -f 45c3cb9bd43f7a6710918d9615e36c4d13283617 # timeout=10
+ &gt; /usr/bin/git branch -a -v --no-abbrev # timeout=10
+ &gt; /usr/bin/git checkout -b master 45c3cb9bd43f7a6710918d9615e36c4d13283617 # timeout=10
+Commit message: "added source code"
+ &gt; /usr/bin/git rev-list --no-walk 45c3cb9bd43f7a6710918d9615e36c4d13283617 # timeout=10
+</span><span class="pipeline-new-node" nodeId="13" startId="11">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="14" startId="10">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="15" startId="15" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="16" startId="16" enclosingId="15" label="Build">[Pipeline] { (Build)
+</span><span class="pipeline-new-node" nodeId="17" enclosingId="16">[Pipeline] sh
+</span><span class="pipeline-node-17">+ mvn clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SpringBootWAR 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ BookingDemo ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ BookingDemo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ BookingDemo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/spring-web-app-casestudy/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ BookingDemo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/spring-web-app-casestudy/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ BookingDemo ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ BookingDemo ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.6:war (default-war) @ BookingDemo ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [BookingDemo] in [/var/lib/jenkins/workspace/spring-web-app-casestudy/target/booking-app]
+[INFO] Processing war project
+[INFO] Webapp assembled in [95 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/spring-web-app-casestudy/target/booking-app.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:repackage (default) @ BookingDemo ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ BookingDemo ---
+[INFO] Installing /var/lib/jenkins/workspace/spring-web-app-casestudy/target/booking-app.war to /var/lib/jenkins/.m2/repository/romaniancoder/BookingDemo/0.0.1-SNAPSHOT/BookingDemo-0.0.1-SNAPSHOT.war
+[INFO] Installing /var/lib/jenkins/workspace/spring-web-app-casestudy/pom.xml to /var/lib/jenkins/.m2/repository/romaniancoder/BookingDemo/0.0.1-SNAPSHOT/BookingDemo-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.204 s
+[INFO] Finished at: 2020-10-03T13:53:13+00:00
+[INFO] Final Memory: 39M/378M
+[INFO] ------------------------------------------------------------------------
+</span><span class="pipeline-new-node" nodeId="18" startId="16">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="19" startId="15">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="20" startId="20" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="21" startId="21" enclosingId="20" label="unit testing">[Pipeline] { (unit testing)
+</span><span class="pipeline-new-node" nodeId="22" startId="21">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="23" startId="20">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="24" startId="24" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="25" startId="25" enclosingId="24" label="sonarqube analysis">[Pipeline] { (sonarqube analysis)
+</span><span class="pipeline-new-node" nodeId="26" enclosingId="25">[Pipeline] tool
+</span><span class="pipeline-new-node" nodeId="27" startId="27" enclosingId="25">[Pipeline] withSonarQubeEnv
+</span><span class="pipeline-node-27">Injecting SonarQube environment variables using the configuration: SonarQube_Home
+</span><span class="pipeline-new-node" nodeId="28" startId="28" enclosingId="27">[Pipeline] {
+</span><span class="pipeline-new-node" nodeId="29" enclosingId="28">[Pipeline] sh
+</span><span class="pipeline-node-29">+ /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Home/bin/sonar-scanner
+INFO: Scanner configuration file: /var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube_Home/conf/sonar-scanner.properties
+INFO: Project root configuration file: /var/lib/jenkins/workspace/spring-web-app-casestudy/sonar-project.properties
+INFO: SonarQube Scanner 4.0.0.1744
+INFO: Java 1.8.0_265 Private Build (64-bit)
+INFO: Linux 4.15.0-1084-gcp amd64
+INFO: User cache: /var/lib/jenkins/.sonar/cache
+INFO: SonarQube server 8.4.2
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+WARN: SonarScanner will require Java 11 to run starting in SonarQube 8.x
+INFO: Load global settings
+INFO: Load global settings (done) | time=362ms
+INFO: Server id: BF41A1F2-AXTuuwAMlLSkXWy4_4eH
+INFO: User cache: /var/lib/jenkins/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=118ms
+INFO: Load/download plugins (done) | time=1111ms
+INFO: Process project properties
+INFO: Process project properties (done) | time=1ms
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=5ms
+INFO: Project key: spring-web-app
+INFO: Base dir: /var/lib/jenkins/workspace/spring-web-app-casestudy
+INFO: Working dir: /var/lib/jenkins/workspace/spring-web-app-casestudy/.scannerwork
+INFO: Load project settings for component key: 'spring-web-app'
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=180ms
+INFO: Auto-configuring with CI 'Jenkins'
+INFO: Load active rules
+INFO: Load active rules (done) | time=2897ms
+INFO: Indexing files...
+INFO: Project configuration:
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=10ms
+INFO: 102 files indexed
+INFO: 0 files ignored because of scm ignore settings
+INFO: Quality profile for css: Sonar way
+INFO: Quality profile for java: Sonar way
+INFO: Quality profile for js: Sonar way
+INFO: Quality profile for web: Sonar way
+INFO: Quality profile for xml: Sonar way
+INFO: ------------- Run sensors on module spring-web-app
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=36ms
+INFO: Sensor JavaSquidSensor [java]
+INFO: Configured Java source version (sonar.java.source): none
+INFO: JavaClasspath initialization
+WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property.
+INFO: JavaClasspath initialization (done) | time=20ms
+INFO: JavaTestClasspath initialization
+INFO: JavaTestClasspath initialization (done) | time=0ms
+INFO: Java Main Files AST scan
+INFO: 7 source files to be analyzed
+INFO: 7/7 source files have been analyzed
+INFO: Java Main Files AST scan (done) | time=1830ms
+INFO: Java Test Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Test Files AST scan (done) | time=0ms
+INFO: Java Generated Files AST scan
+INFO: 0 source files to be analyzed
+INFO: 0/0 source files have been analyzed
+INFO: Java Generated Files AST scan (done) | time=2ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=2168ms
+INFO: Sensor SonarCSS Metrics [cssfamily]
+INFO: 0/0 source files have been analyzed
+INFO: Sensor SonarCSS Metrics [cssfamily] (done) | time=717ms
+INFO: Sensor SonarCSS Rules [cssfamily]
+ERROR: CSS rules were not executed. Error when running: 'node -v'. Is Node.js available during analysis?
+org.sonarsource.nodejs.NodeCommandException: Error when running: 'node -v'. Is Node.js available during analysis?
+	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:83)
+	at org.sonarsource.nodejs.NodeCommandBuilderImpl.getVersion(NodeCommandBuilderImpl.java:196)
+	at org.sonarsource.nodejs.NodeCommandBuilderImpl.checkNodeCompatibility(NodeCommandBuilderImpl.java:169)
+	at org.sonarsource.nodejs.NodeCommandBuilderImpl.build(NodeCommandBuilderImpl.java:144)
+	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.initNodeCommand(CssAnalyzerBridgeServer.java:133)
+	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.startServer(CssAnalyzerBridgeServer.java:101)
+	at org.sonar.css.plugin.server.CssAnalyzerBridgeServer.startServerLazily(CssAnalyzerBridgeServer.java:153)
+	at org.sonar.css.plugin.CssRuleSensor.execute(CssRuleSensor.java:99)
+	at org.sonar.scanner.sensor.AbstractSensorWrapper.analyse(AbstractSensorWrapper.java:48)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:85)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.lambda$execute$1(ModuleSensorsExecutor.java:59)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.withModuleStrategy(ModuleSensorsExecutor.java:77)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:59)
+	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:82)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:388)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:384)
+	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:353)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:144)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:72)
+	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:66)
+	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:185)
+	at org.sonarsource.scanner.api.EmbeddedScanner.execute(EmbeddedScanner.java:137)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:112)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:75)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+Caused by: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.sonarsource.nodejs.NodeCommand$ProcessWrapperImpl.start(NodeCommand.java:175)
+	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:79)
+	... 37 common frames omitted
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.&lt;init&gt;(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 39 common frames omitted
+
+INFO: Sensor SonarCSS Rules [cssfamily] (done) | time=679ms
+INFO: Sensor JaCoCo XML Report Importer [jacoco]
+INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=5ms
+INFO: Sensor JavaScript analysis [javascript]
+ERROR: Error when running: 'node -v'. Is Node.js available during analysis?
+org.sonarsource.nodejs.NodeCommandException: Error when running: 'node -v'. Is Node.js available during analysis?
+	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:83)
+	at org.sonarsource.nodejs.NodeCommandBuilderImpl.getVersion(NodeCommandBuilderImpl.java:196)
+	at org.sonarsource.nodejs.NodeCommandBuilderImpl.checkNodeCompatibility(NodeCommandBuilderImpl.java:169)
+	at org.sonarsource.nodejs.NodeCommandBuilderImpl.build(NodeCommandBuilderImpl.java:144)
+	at org.sonar.plugins.javascript.eslint.EslintBridgeServerImpl.initNodeCommand(EslintBridgeServerImpl.java:149)
+	at org.sonar.plugins.javascript.eslint.EslintBridgeServerImpl.startServer(EslintBridgeServerImpl.java:107)
+	at org.sonar.plugins.javascript.eslint.EslintBridgeServerImpl.startServerLazily(EslintBridgeServerImpl.java:170)
+	at org.sonar.plugins.javascript.eslint.AbstractEslintSensor.execute(AbstractEslintSensor.java:106)
+	at org.sonar.plugins.javascript.eslint.JavaScriptEslintBasedSensor.execute(JavaScriptEslintBasedSensor.java:49)
+	at org.sonar.scanner.sensor.AbstractSensorWrapper.analyse(AbstractSensorWrapper.java:48)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:85)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.lambda$execute$1(ModuleSensorsExecutor.java:59)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.withModuleStrategy(ModuleSensorsExecutor.java:77)
+	at org.sonar.scanner.sensor.ModuleSensorsExecutor.execute(ModuleSensorsExecutor.java:59)
+	at org.sonar.scanner.scan.ModuleScanContainer.doAfterStart(ModuleScanContainer.java:82)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.scanner.scan.ProjectScanContainer.scan(ProjectScanContainer.java:388)
+	at org.sonar.scanner.scan.ProjectScanContainer.scanRecursively(ProjectScanContainer.java:384)
+	at org.sonar.scanner.scan.ProjectScanContainer.doAfterStart(ProjectScanContainer.java:353)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.scanner.bootstrap.GlobalContainer.doAfterStart(GlobalContainer.java:144)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:137)
+	at org.sonar.core.platform.ComponentContainer.execute(ComponentContainer.java:123)
+	at org.sonar.batch.bootstrapper.Batch.doExecute(Batch.java:72)
+	at org.sonar.batch.bootstrapper.Batch.execute(Batch.java:66)
+	at org.sonarsource.scanner.api.internal.batch.BatchIsolatedLauncher.execute(BatchIsolatedLauncher.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.sonarsource.scanner.api.internal.IsolatedLauncherProxy.invoke(IsolatedLauncherProxy.java:60)
+	at com.sun.proxy.$Proxy0.execute(Unknown Source)
+	at org.sonarsource.scanner.api.EmbeddedScanner.doExecute(EmbeddedScanner.java:185)
+	at org.sonarsource.scanner.api.EmbeddedScanner.execute(EmbeddedScanner.java:137)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:112)
+	at org.sonarsource.scanner.cli.Main.execute(Main.java:75)
+	at org.sonarsource.scanner.cli.Main.main(Main.java:61)
+Caused by: java.io.IOException: Cannot run program "node": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.sonarsource.nodejs.NodeCommand$ProcessWrapperImpl.start(NodeCommand.java:175)
+	at org.sonarsource.nodejs.NodeCommand.start(NodeCommand.java:79)
+	... 38 common frames omitted
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.&lt;init&gt;(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 40 common frames omitted
+
+INFO: Sensor JavaScript analysis [javascript] (done) | time=734ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing [/var/lib/jenkins/workspace/spring-web-app-casestudy/target/surefire-reports]
+INFO: Sensor SurefireSensor [java] (done) | time=2ms
+INFO: Sensor JavaXmlSensor [java]
+INFO: 1 source files to be analyzed
+INFO: Sensor JavaXmlSensor [java] (done) | time=305ms
+INFO: 1/1 source files have been analyzed
+INFO: Sensor HTML [web]
+INFO: Sensor HTML [web] (done) | time=126ms
+INFO: Sensor XML Sensor [xml]
+INFO: 1 source files to be analyzed
+INFO: Sensor XML Sensor [xml] (done) | time=243ms
+INFO: 1/1 source files have been analyzed
+INFO: ------------- Run sensors on project
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=10ms
+INFO: Sensor Java CPD Block Indexer
+INFO: Sensor Java CPD Block Indexer (done) | time=24ms
+INFO: SCM Publisher SCM provider for this project is: git
+INFO: SCM Publisher 20 source files to be analyzed
+INFO: SCM Publisher 12/20 source files have been analyzed (done) | time=237ms
+WARN: Missing blame information for the following files:
+WARN:   * target/classes/static/app/app.module.js
+WARN:   * target/classes/static/app/bookings.controller.js
+WARN:   * target/booking-app/WEB-INF/classes/static/app/bookings.controller.js
+WARN:   * target/booking-app/WEB-INF/classes/static/bootstrap.css
+WARN:   * target/classes/templates/index.html
+WARN:   * target/classes/static/bootstrap.css
+WARN:   * target/booking-app/WEB-INF/classes/templates/index.html
+WARN:   * target/booking-app/WEB-INF/classes/static/app/app.module.js
+WARN: This may lead to missing/broken features in SonarQube
+INFO: CPD Executor 3 files had no CPD blocks
+INFO: CPD Executor Calculating CPD for 7 files
+INFO: CPD Executor CPD calculation finished (done) | time=22ms
+INFO: Analysis report generated in 117ms, dir size=1000 KB
+INFO: Analysis report compressed in 68ms, zip size=240 KB
+INFO: Analysis report uploaded in 468ms
+INFO: ANALYSIS SUCCESSFUL, you can browse <a href='http://35.238.211.195:9000/dashboard?id=spring-web-app'>http://35.238.211.195:9000/dashboard?id=spring-web-app</a>
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at <a href='http://35.238.211.195:9000/api/ce/task?id=AXTuvTUylLSkXWy4_9Hk'>http://35.238.211.195:9000/api/ce/task?id=AXTuvTUylLSkXWy4_9Hk</a>
+INFO: Analysis total time: 14.459 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 17.647s
+INFO: Final Memory: 23M/504M
+INFO: ------------------------------------------------------------------------
+</span><span class="pipeline-new-node" nodeId="30" startId="28">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="31" startId="27">[Pipeline] // withSonarQubeEnv
+</span><span class="pipeline-new-node" nodeId="32" startId="25">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="33" startId="24">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="34" startId="34" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="35" startId="35" enclosingId="34" label="create instance from playbook">[Pipeline] { (create instance from playbook)
+</span><span class="pipeline-new-node" nodeId="36" enclosingId="35">[Pipeline] sh
+</span><span class="pipeline-node-36">+ pwd
+/var/lib/jenkins/workspace/spring-web-app-casestudy
+</span><span class="pipeline-new-node" nodeId="37" enclosingId="35">[Pipeline] sh
+</span><span class="pipeline-node-37">+ ls -ltr
+total 28
+drwxr-xr-x 3 jenkins jenkins 4096 Oct  3 13:53 src
+-rw-r--r-- 1 jenkins jenkins  125 Oct  3 13:53 sonar-project.properties
+-rw-r--r-- 1 jenkins jenkins   38 Oct  3 13:53 README.md
+-rw-r--r-- 1 jenkins jenkins 2515 Oct  3 13:53 pom.xml
+-rw-r--r-- 1 jenkins jenkins  215 Oct  3 13:53 Dockerfile
+-rw-r--r-- 1 jenkins jenkins 1959 Oct  3 13:53 ansible-create-instance-gcp.yaml
+drwxr-xr-x 7 jenkins jenkins 4096 Oct  3 13:53 target
+</span><span class="pipeline-new-node" nodeId="38" enclosingId="35">[Pipeline] sh
+</span><span class="pipeline-node-38">+ ansible-playbook ansible-create-instance-gcp.yaml --private-key=service-cred.json
+
+PLAY [Deploy gcp vm] ***********************************************************
+
+TASK [create a disk] ***********************************************************
+changed: [localhost]
+
+TASK [create a network] ********************************************************
+changed: [localhost]
+
+TASK [create a address] ********************************************************
+changed: [localhost]
+
+TASK [create a instance] *******************************************************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=4    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+</span><span class="pipeline-new-node" nodeId="39" startId="35">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="40" startId="34">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="41" startId="41" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="42" startId="42" enclosingId="41" label="docker image build">[Pipeline] { (docker image build)
+</span><span class="pipeline-new-node" nodeId="43" enclosingId="42">[Pipeline] sh
+</span><span class="pipeline-node-43">+ sudo docker build -t spring-web-app .
+Sending build context to Docker daemon  124.6MB
+Step 1/6 : FROM tomcat:8
+ ---&gt; d5ef56581444
+Step 2/6 : EXPOSE 8082
+ ---&gt; Using cache
+ ---&gt; dae2eb080f4b
+Step 3/6 : EXPOSE 8080
+ ---&gt; Using cache
+ ---&gt; 992cb3ef8b1d
+Step 4/6 : ARG WAR_FILE=/target/*.war
+ ---&gt; Using cache
+ ---&gt; 5aeb3dfcf857
+Step 5/6 : COPY ${WAR_FILE} app.war
+ ---&gt; 4479f64caebc
+Step 6/6 : ENTRYPOINT ["java", "-jar", "app.war"]
+ ---&gt; Running in 87947248f97b
+Removing intermediate container 87947248f97b
+ ---&gt; cab6c0f89003
+Successfully built cab6c0f89003
+Successfully tagged spring-web-app:latest
+</span><span class="pipeline-new-node" nodeId="44" startId="44" enclosingId="42">[Pipeline] withCredentials
+</span><span class="pipeline-node-44">Masking supported pattern matches of $login or $password
+</span><span class="pipeline-new-node" nodeId="45" startId="45" enclosingId="44">[Pipeline] {
+</span><span class="pipeline-new-node" nodeId="46" enclosingId="45">[Pipeline] sh
+</span><span class="pipeline-node-46">+ sudo docker login -u **** -p ****
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /var/lib/jenkins/.docker/config.json.
+Configure a credential helper to remove this warning. See
+<a href='https://docs.docker.com/engine/reference/commandline/login/#credentials-store'>https://docs.docker.com/engine/reference/commandline/login/#credentials-store</a>
+
+Login Succeeded
+</span><span class="pipeline-new-node" nodeId="47" startId="45">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="48" startId="44">[Pipeline] // withCredentials
+</span><span class="pipeline-new-node" nodeId="49" startId="42">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="50" startId="41">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="51" startId="51" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="52" startId="52" enclosingId="51" label="push image into docker registry">[Pipeline] { (push image into docker registry)
+</span><span class="pipeline-new-node" nodeId="53" enclosingId="52">[Pipeline] sh
+</span><span class="pipeline-node-53">+ sudo docker tag spring-web-app:latest surya1150/bootcamp:spring-web-app
+</span><span class="pipeline-new-node" nodeId="54" enclosingId="52">[Pipeline] sh
+</span><span class="pipeline-node-54">+ sudo docker push surya1150/bootcamp:spring-web-app
+The push refers to repository [docker.io/surya1150/bootcamp]
+70a0b70c879f: Preparing
+430b9b73d83e: Preparing
+a5118c5dbc40: Preparing
+9fc6b20516ec: Preparing
+51d097727c82: Preparing
+c796c6412c66: Preparing
+df95ed2a791d: Preparing
+17bdf5e22660: Preparing
+d37096232ed8: Preparing
+6add0d2b5482: Preparing
+4ef54afed780: Preparing
+17bdf5e22660: Waiting
+d37096232ed8: Waiting
+6add0d2b5482: Waiting
+c796c6412c66: Waiting
+4ef54afed780: Waiting
+df95ed2a791d: Waiting
+9fc6b20516ec: Layer already exists
+51d097727c82: Layer already exists
+430b9b73d83e: Layer already exists
+a5118c5dbc40: Layer already exists
+c796c6412c66: Layer already exists
+df95ed2a791d: Layer already exists
+17bdf5e22660: Layer already exists
+d37096232ed8: Layer already exists
+4ef54afed780: Layer already exists
+6add0d2b5482: Layer already exists
+70a0b70c879f: Pushed
+spring-web-app: digest: sha256:fd203e09fd17acfa31441ec7d7a79b8633af4e186dcf7d9f4d11936c38c707e6 size: 2633
+</span><span class="pipeline-new-node" nodeId="55" startId="52">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="56" startId="51">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="57" startId="57" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="58" startId="58" enclosingId="57" label="pull image">[Pipeline] { (pull image)
+</span><span class="pipeline-new-node" nodeId="59" enclosingId="58">[Pipeline] sh
+</span><span class="pipeline-node-59">+ sudo docker pull surya1150/bootcamp:spring-web-app
+spring-web-app: Pulling from surya1150/bootcamp
+Digest: sha256:fd203e09fd17acfa31441ec7d7a79b8633af4e186dcf7d9f4d11936c38c707e6
+Status: Image is up to date for surya1150/bootcamp:spring-web-app
+docker.io/surya1150/bootcamp:spring-web-app
+</span><span class="pipeline-new-node" nodeId="60" startId="58">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="61" startId="57">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="62" startId="62" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="63" startId="63" enclosingId="62" label="Create container in GCP INSTANCE">[Pipeline] { (Create container in GCP INSTANCE)
+</span><span class="pipeline-new-node" nodeId="64" enclosingId="63">[Pipeline] sh
+</span><span class="pipeline-node-64">+ sudo docker run -d --name=spring-web-app-casestudy -p 8084:8080 surya1150/bootcamp:spring-web-app
+6f26050680a0cbc01076e8215ad077c07661191801e9064290896e3213e450aa
+</span><span class="pipeline-new-node" nodeId="65" startId="63">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="66" startId="62">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="67" startId="67" enclosingId="4">[Pipeline] stage
+</span><span class="pipeline-new-node" nodeId="68" startId="68" enclosingId="67" label="notification">[Pipeline] { (notification)
+</span><span class="pipeline-new-node" nodeId="69" enclosingId="68">[Pipeline] emailext
+</span><span class="pipeline-node-69">messageContentType = text/plain; charset=UTF-8
+Adding recipients from project recipient list
+Analyzing: suryachandrakumar5@gmail.com
+Looking for: suryachandrakumar5@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: suryachandrakumar5@gmail.com
+	=&gt; found type: 0
+Analyzing: suryachandrakumar5@gmail.com
+Looking for: suryachandrakumar5@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: suryachandrakumar5@gmail.com
+	=&gt; found type: 0
+Analyzing: suryachandrakumar5@gmail.com
+Looking for: suryachandrakumar5@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: suryachandrakumar5@gmail.com
+	=&gt; found type: 0
+Adding recipients from trigger recipient list
+Successfully created MimeMessage
+Sending email to: suryachandrakumar5@gmail.com
+</span><span class="pipeline-new-node" nodeId="70" startId="68">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="71" startId="67">[Pipeline] // stage
+</span><span class="pipeline-new-node" nodeId="72" startId="4">[Pipeline] }
+</span><span class="pipeline-new-node" nodeId="73" startId="3">[Pipeline] // node
+</span><span class="pipeline-new-node" nodeId="74" startId="2">[Pipeline] End of Pipeline
+</span>Finished: SUCCESS
+</pre></div></div><footer class="page-footer"><div class="container-fluid"><div class="page-footer__flex-row"><div class="page-footer__footer-id-placeholder" id="footer"></div><div class="page-footer__links rest_api hidden-xs"><a href="api/">REST API</a></div><div class="page-footer__links page-footer__links--white jenkins_ver"><a href="https://jenkins.io/" target="_blank">Jenkins 2.249.1</a></div></div></div></footer><script async="true" src="/static/aca1ebcf/scripts/svgxuse.min.js" type="text/javascript"></script></body></html>

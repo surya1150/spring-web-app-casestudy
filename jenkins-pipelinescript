@@ -1,0 +1,59 @@
+node() {    
+	try {
+    stage('clean workspace') {
+        cleanWs()
+    }
+    stage('SCM Checkout') { 
+        // Get some code from a GitHub repository
+        //checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/surya1150/Spring-web-app.git']]])
+        git 'https://github.com/surya1150/spring-web-app-casestudy.git'        
+    }
+    stage('Build') {
+        // Run the maven build
+        sh 'mvn clean install'
+    }
+    stage('unit testing') {
+        //junit '**/target/surefire-reports/TEST-*.xml'
+        //archiveArtifacts 'target/*.jar'
+    }
+    stage('sonarqube analysis') {
+        //def sonarHome= tool 'SonarScanner 4.0';
+        def sonarHome= tool 'SonarQube_Home';
+        withSonarQubeEnv('SonarQube_Home') {
+            sh "${sonarHome}/bin/sonar-scanner"
+        }
+    }
+    stage('create instance from playbook'){
+        //ansiblePlaybook credentialsId: 'kubernetes-adm', playbook: 'ansible-create-instance-gcp.yaml'
+        //ansiblePlaybook become: true, credentialsId: 'gcp_ssh', installation: 'ansible', playbook: 'ansible-create-instance-gcp.yaml', sudo: true
+        sh 'pwd'
+        sh 'ls -ltr'
+        sh 'ansible-playbook ansible-create-instance-gcp.yaml --private-key=service-cred.json '
+    }
+    stage('docker image build') {
+        sh 'sudo docker build -t spring-web-app .'
+        withCredentials([usernamePassword(credentialsId: 'docker_login', passwordVariable: 'password', usernameVariable: 'login')]) {
+        sh "sudo docker login -u ${login} -p ${password}"
+}
+    }
+	stage('push image into docker registry') {		
+		sh 'sudo docker tag spring-web-app:latest surya1150/bootcamp:spring-web-app'
+        sh 'sudo docker push surya1150/bootcamp:spring-web-app'
+	}
+	stage('pull image') {
+		sh 'sudo docker pull surya1150/bootcamp:spring-web-app'
+   }
+   stage('Create container in GCP INSTANCE'){
+		sh 'sudo docker run -d --name=spring-web-app-casestudy -p 8084:8080 surya1150/bootcamp:spring-web-app'
+   }
+    stage('notification'){
+            emailext body: '''$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+			Check console output at $BUILD_URL to view the results.''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'suryachandrakumar5@gmail.com'
+        }
+    }
+    catch(e){
+        emailext body: '''$PROJECT_NAME - Build # $BUILD_NUMBER - FAILED:
+		Check console output at $BUILD_URL to view the results.''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - FAILED!', to: 'suryachandrakumar5@gmail.com'
+	} 
+}
+
